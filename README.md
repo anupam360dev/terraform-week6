@@ -21,3 +21,35 @@ This project demonstrates:
 ---
 
 ## 📁 Project Structure
+terraform-week6/
+│
+├── main.tf
+├── terraform.lock.hcl
+├── README.md
+└── ec2-screenshot.png (EC2 running instance)
+
+---
+
+## 🛠️ Tools & Technologies Used
+- **Terraform v1.x**
+- **AWS IAM**
+- **AWS CLI v2**
+- **Amazon EC2**
+- **Ubuntu/Linux Terminal**
+
+---
+
+# 🧩 Step-by-Step Implementation
+
+## 1️⃣ Create IAM User for Terraform
+- Created IAM user: `terraform-user`  
+- Attached permissions:
+  - `AmazonEC2FullAccess`
+  - `AmazonVPCFullAccess`
+- Generated **Access Key ID** and **Secret Key**
+
+---
+
+## 2️⃣ Configure AWS CLI
+```bash
+aws configure
